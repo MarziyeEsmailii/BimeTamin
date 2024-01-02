@@ -8,8 +8,10 @@
 		<title>پنل کاربری</title>
 	</head>
 	<body>
-		<section class="dashbord">
-			<section class="sidebar active">
+		<section class="dashbord"> 
+            <!--ساختاری برای داشبورد با نوار کناری و لوگو تعریف می کند-->
+            <!--خط بخشی از صفحه وب را با نام کلاس "داشبورد" تعریف می کند.-->
+			<section class="sidebar active"> <!--این زیربخش حاوی نوار کناری داشبورد است-->
 				<div class="logo">
 					<a href="#">
 						<img src="./assets/img/logo.svg" alt="" />
@@ -18,11 +20,11 @@
                 <div class="menu">
                     <div class="main-menu">
                         <h3 class="menu-title">منوی اصلی</h3>
-                        <ul class="border-b">
-                            <li>
-                                <a href="index.html" class="active">
-                                    <span>
-                                        <svg
+                        <ul class="border-b"> <!--لیست نامرتب-->
+                            <li> <!--کد ارائه شده بخشی از یک آیتم لیست است -->
+                                <a href="index.html" class="active"> <!--این یک تگ لنگر است که برای ایجاد یک پیونداستفاده می شود و مقصد لینک را مشخص می کند-->
+                                    <span> <!-- برای گروه بندی عناصر درون خطی در یک سند استفاده می شود.-->
+                                         <svg 
                                             xmlns="http://www.w3.org/2000/svg"
                                             fill="none"
                                             viewBox="0 0 24 24"
@@ -33,50 +35,78 @@
                                                 stroke-linecap="round"
                                                 stroke-linejoin="round"
                                                 d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
-                                        </svg>
+                                        </svg>  
+                                        <!-- SVG برای نمایش نماد داشبورد استفاده می شود -->
+                                        <!-- xmlns  یک اعلان فضای نام است  -->
+                                        <!-- fill رنگ داخل شی را تعیین می کند-->
+                                        <!-- viewBox مجموعه ای از گرافیک ها به تناسب یک عنصر کانتینری خاص کشیده شوند-->
+                                        <!-- stroke-width عرض طرح کلی را مشخص می کند-->
+                                        <!-- stroke رنگ طرح کلی را تعیین می کند-->
+                                        <!-- stroke-linecap="round" این معنی که انتهای آن گرد می شود -->
+                                        <!-- stroke-linejoin="round" این معنی که انتهای برخورد آن گرد می شود -->
+                                        <!--d="..."`:  شامل یک سری پارامترهایی است که توسط رندر برای ترسیم مسیر استفاده می شود هر فرمان با یک حرف نشان داده می شود-->
                                     </span>
-                                    <span>
-                                        داشبورد
-                                    </span>
+                                    <span> داشبورد </span>
                                 </a>
                             </li>
                             <li>
                                 <a href="insure.html" class="">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
-                                          </svg>
+                                        <svg 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="none" 
+                                        viewBox="0 0 24 24" 
+                                        stroke-width="1.5" 
+                                        stroke="currentColor" 
+                                        class="w-6 h-6">
+                                        <path 
+                                        stroke-linecap="round" 
+                                        stroke-linejoin="round" 
+                                        d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                                    </svg>
                                           
                                     </span>
-                                    <span>
-                                      بیمه شدگان
-                                    </span>
+                                    <span> بیمه شدگان </span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" />
-                                          </svg>        
+                                      <svg 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="none" 
+                                        viewBox="0 0 24 24" 
+                                        stroke-width="1.5" 
+                                        stroke="currentColor" 
+                                        class="w-6 h-6">
+                                        <path 
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" />
+                                      </svg>        
                                     </span>
-                                    <span>
-                                      مستمره بگیران
-                                    </span>
+                                    <span> مستمره بگیران </span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" class="">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                          </svg>
+                                        <svg 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="none"
+                                         viewBox="0 0 24 24" 
+                                         stroke-width="1.5" 
+                                         stroke="currentColor"
+                                         class="w-6 h-6">
+                                         <path 
+                                         stroke-linecap="round" 
+                                         stroke-linejoin="round" 
+                                         d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                        </svg>
                                             
                                     </span>
-                                    <span>
-                                 تامین اجتماعی من
-                                    </span>
+                                    <span> تامین اجتماعی من </span>
                                 </a>
                             </li>
                         </ul>
@@ -85,27 +115,41 @@
                             <li>
                                 <a href="#" class="">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                                          </svg>                                          
+                                        <svg 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="none" 
+                                        viewBox="0 0 24 24" 
+                                        stroke-width="1.5" 
+                                        stroke="currentColor" 
+                                        class="w-6 h-6">
+                                        <path 
+                                        stroke-linecap="round" 
+                                        stroke-linejoin="round" 
+                                        d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                        </svg>                                          
                                     </span>
-                                    <span>
-                              اطلاعات حساب 
-                                    </span>
+                                    <span>  اطلاعات حساب </span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" class="">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
-                                          </svg>
+                                        <svg 
+                                         xmlns="http://www.w3.org/2000/svg" 
+                                         fill="none" 
+                                         viewBox="0 0 24 24" 
+                                         stroke-width="1.5"
+                                         stroke="currentColor" 
+                                         class="w-6 h-6">
+                                         <path
+                                          stroke-linecap="round"
+                                         stroke-linejoin="round" 
+                                         d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                        </svg>
                                                                                    
                                     </span>
-                                    <span>
-                              تغییر گذرواژه
-                                    </span>
+                                    <span>تغییر گذرواژه </span>
                                 </a>
                             </li>
 
@@ -113,28 +157,39 @@
                             <li>
                                 <a href="#" class="">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                                          </svg>
+                                        <svg 
+                                         xmlns="http://www.w3.org/2000/svg"
+                                         fill="none" 
+                                         viewBox="0 0 24 24" 
+                                         stroke-width="1.5" 
+                                         stroke="currentColor"
+                                         class="w-6 h-6">
+                                         <path 
+                                         stroke-linecap="round" 
+                                         stroke-linejoin="round" 
+                                         d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                        </svg>
                                                                           
                                     </span>
-                                    <span>
-                              تغییر شماره تلفن
-                                    </span>
+                                    <span>  تغییر شماره تلفن  </span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" class="">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <svg 
+                                         xmlns="http://www.w3.org/2000/svg" 
+                                         fill="none" 
+                                         viewBox="0 0 24 24" 
+                                         stroke-width="1.5" 
+                                         stroke="currentColor" 
+                                         class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                                           </svg>                                                                
                                     </span>
-                                    <span>
-                                        تغییر آدرس
-                                    </span>
+                                    <span>  تغییر آدرس </span>
                                 </a>
                             </li>
 
@@ -142,14 +197,20 @@
                             <li>
                                 <a href="#" class="clr-red">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9" />
-                                          </svg>
+                                        <svg 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="none"
+                                         viewBox="0 0 24 24" 
+                                         stroke-width="1.5" 
+                                         stroke="currentColor" 
+                                         class="w-6 h-6">
+                                         <path stroke-linecap="round" 
+                                         stroke-linejoin="round" 
+                                         d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9" />
+                                        </svg>
                                                                                                       
                                     </span>
-                                    <span>
-                                      خروج از حساب
-                                    </span>
+                                    <span> خروج از حساب </span>
                                 </a>
                             </li>
 
@@ -159,77 +220,103 @@
                             <li>
                                 <a href="#" class="">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
-                                          </svg>
-                                                                
+                                        <svg
+                                         xmlns="http://www.w3.org/2000/svg"
+                                         fill="none" 
+                                         viewBox="0 0 24 24" 
+                                         stroke-width="1.5"
+                                         stroke="currentColor"
+                                         class="w-6 h-6">
+                                         <path
+                                         stroke-linecap="round" 
+                                         stroke-linejoin="round" 
+                                         d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+                                        </svg>             
                                     </span>
-                                    <span>
-                                        021-528-5824
-                                    </span>
+                                    <span>  021-528-5824 </span>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#" class="">
                                     <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z" />
-                                          </svg>
-                                                   
+                                        <svg 
+                                         xmlns="http://www.w3.org/2000/svg"
+                                         fill="none" viewBox="0 0 24 24" 
+                                         stroke-width="1.5" 
+                                         stroke="currentColor"
+                                         class="w-6 h-6">
+                                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z" />
+                                        </svg>        
                                     </span>
-                                    <span>
-                                       پاسخگویی ۸ صبح الی ۱۵ عصر
-                                    </span>
+                                    <span> پاسخگویی ۸ صبح الی ۱۵ عصر   </span>
                                 </a>
                             </li>
-                      
                         </ul>
                     </div>
                 </div>
-			
 			</section>
 			<main class="main">
                 <section class="header">
                     <div class="right-contnet">
                       <button class="toggle-menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
-                          </svg>
-                            
-                          <span>
-                            منو
-                          </span>
+                        <svg 
+                         xmlns="http://www.w3.org/2000/svg" 
+                         fill="none" viewBox="0 0 24 24" 
+                         stroke-width="1.5" 
+                         stroke="currentColor" 
+                         class="w-6 h-6">
+                         <path 
+                         stroke-linecap="round" 
+                         stroke-linejoin="round" 
+                         d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+                        </svg>
+                          <span> منو </span>
                       </button>
                     <div class="userinfo">
                         <img src="./assets/img/ava-header.png" alt="">
+                        <!--«src» نشانی اینترنتی منبع تصویر را مشخص می‌کند-->
+                        <!--«alt» متن جایگزینی را برای تصویر ارائه می‌کند-->
                         <p class="info">
-                            <span>مرضیه اسماعیلی</span>
-                            <span>۰۲۳۴۵۰۵۴۳۹</span>
+                            <span>مرضیه اسماعیلی</span> <!--برای گروه بندی عناصر درون خطی در یک سند استفاده می شوند-->
+                            <span>0024144405</span> 
                         </p>
                     </div>
                     </div>
                     <div class="left-content">
                         <a href="#" class="support">
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
-                                  </svg>
+                                <svg
+                                 xmlns="http://www.w3.org/2000/svg" 
+                                 fill="none" 
+                                 viewBox="0 0 24 24" 
+                                 stroke-width="1.5" 
+                                 stroke="currentColor" 
+                                 class="w-6 h-6">
+                                 <path 
+                                 stroke-linecap="round" 
+                                 stroke-linejoin="round" 
+                                 d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                                </svg>
                             </span>
-                            <span> 
-                                 پشتیبانی
-                            </span>
+                            <span>پشتیبانی</span>
                         </a>
-                        <a href="#" class="">
+                        <a href="#" class=""> <!--«#» به این معنی است که پیوند به جایی منتهی نمی‌شود-->
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
-                                  </svg>
-                                  
+                                <svg
+                                 xmlns="http://www.w3.org/2000/svg" 
+                                 fill="none" 
+                                 viewBox="0 0 24 24" 
+                                 stroke-width="1.5" 
+                                 stroke="currentColor" 
+                                 class="w-6 h-6">
+                                 <path 
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
+                                </svg>
                             </span>
-                            <span> 
-                              خروج
-                            </span>
+                            <span>خروج</span>
                         </a>
                     </div>
                 </section>
@@ -257,11 +344,18 @@
                                     <div class="box active">
                                         <h1>اطلاعات اصلی</h1>
                                         <div class="body-box">
-                                            <form action="" class="">
 
+                                            <form action="" class=""> 
+                                                <!--ویژگی «اکشن» مشخص می‌کند که هنگام ارسال فرم، داده‌های فرم به کجا ارسال شود-->
+                                                <!--ویژگی «اکشن» خالی است به این معنی که داده های فرم به همان صفحه ای که فرم در آن قرار دارد ارسال می شود-->
+                                                
                                                 <div class="input-wrapper">
-                                                    <label for="first__name"> نام : </label>
+                                                    <label for="first__name"> نام : </label> <!-- متن توصیفی را برای عناصر مربوطه ارائه می دهند.-->
                                                     <input type="text" name="first__name" id="first__name" value="مرضیه" readonly>
+                                                    <!--name" نام عنصر ورودی را مشخص می کند-->
+                                                    <!--id یک شناسه منحصر به فرد برای عنصر ورودی ارائه می کند-->
+                                                    <!--"value" مقدار اولیه فیلد ورودی را مشخص می کند-->
+                                                    <!--readonly" مشخص می کند که یک فیلد ورودی فقط خواندنی است-->
                                                 </div>
                                                 <div class="input-wrapper">
                                                     <label for="last__name"> نام خانوادگی : </label>
@@ -269,15 +363,17 @@
                                                 </div>
                                                 <div class="input-wrapper">
                                                     <label for="NationalCode">  کد ملی : </label>
-                                                    <input type="text" name="NationalCode" id="NationalCode" value="۰۳۴۴۵۳۱۹۴۳" readonly>
+                                                    <input type="text" name="NationalCode" id="NationalCode" value="0025144405" readonly>
                                                 </div>
                                                 <div class="input-wrapper" >
                                                     <label for="last__name">  تاریخ تولد : </label>
-                                                    <input type="text" name="birday" id="birday" value="1379/05/24" readonly>
+                                                    <input type="text" name="birday" id="birday" value="1381/07/21" readonly>
                                                 </div>
                                                 <div class="input-wrapper">
                                                     <label for="phone">  شماره تلفن  : </label>
-                                                    <input type="text" name="phone" id="phone" value="09176548255" readonly placeholder="شماره تلفن با ۰۹ شروع شود">
+                                                    <input type="text" name="phone" id="phone" value="09921918771" readonly
+                                                    placeholder="شماره تلفن با ۰۹ شروع شود"> 
+                                                    <!--"placeholder" یک راهنمایی کوتاه برای کمک به کاربر در ورود داده ها را مشخص می کند-->
                                                 </div>
                                                 <div class="input-wrapper">
                                                     <label for="mail"> ایمیل : </label>
@@ -303,7 +399,7 @@
                                             <form action="" class="">
                                                 <div class="input-wrapper">
                                                     <label for="phone">  شماره تلفن  : </label>
-                                                    <input type="text" name="phone" id="phone" value="09176548255" readonly>
+                                                    <input type="text" name="phone" id="phone" value="09921918771" readonly>
                                                 </div>
                                                 <div class="input-wrapper">
                                                     <label for="mail"> کد ارسال شده  : </label>
@@ -334,7 +430,6 @@
                                 <div class="border-b"></div>
                             </div>
                             <div class="report-btns">
-                              
                                 <button>مشاهده  کلیه سوابق</button>
                                 <button>مشاهده ریز سوابق و دستمزد</button>
                                 <button>مشاهده ریز سوابق و دستمزد</button>
@@ -347,19 +442,19 @@
                                 <div class="border-b"></div>
                             </div>
                             <div class="table-wrapper">
-                                <table class="latest-requests">
-                                    <thead>
-                                        <tr>
-                                            <th>شماره درخواست</th>
+                                <table class="latest-requests"> <!-- یک جدول با پنج ستون ایجاد می کند-->
+                                    <thead> <!--برای گروه بندی محتوای هدر در جدول استفاده میشود-->
+                                        <tr> <!--ین تگ یک ردیف را در جدول تعریف می کند.-->
+                                            <th>شماره درخواست</th> <!--تعریف یک ستون در جدول-->
                                             <th>عنوان درخواست</th>
                                             <th> تاریخ درخواست</th>
                                             <th>وضعیت درخواست</th>
                                             <th>عملیات</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody> <!--اضافه کردن داده به جدول-->
                                         <tr>
-                                            <td>54210025</td>
+                                            <td>54210025</td> 
                                             <td>درخواست تغيير افراد تحت تکفل</td>
                                             <td>1402/10/08</td>
                                             <td>در انتظار تائید</td>
@@ -419,25 +514,16 @@
                                                <a href="#" class="edit-btn">ویرایش</a> 
                                             </td>
                                         </tr>
-                                      
-
                                     </tbody>
                                 </table>
-
                             </div>
                         </div>
                     </div>
                 </section>
             </main>
 		</section>
-
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!-- کتابخانه جاوااسکریپت برای ایجاد نمودار در وب سایت ها است -->
         <script src="./assets/js/main.js"></script>
 	</body>
-
-
-
-
-
-    
 </html>

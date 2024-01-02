@@ -1,4 +1,4 @@
-:root {
+:root { /*ریشه باعث می شود که متغیرها به صورت کل برای همه تگ های موجود اعمال شود*/
 	--Yekan-font: "Yekan Bakh";
 	--Yekan-font-thin: "Yekan Bakh Hairline";
 	--Yekan-font-bold: "Yekan Bakh Bold";
@@ -15,33 +15,38 @@
 }
 
 * {
-	margin: 0;
+	margin: 0; /*همه عناصر بدون فضای اضافی در اطراف یا داخل آنها شروع می شوند*/
 	padding: 0;
 	box-sizing: border-box;
 }
 html {
 	font-size: 62.5%;
-	zoom: 1;
+	zoom: 1; /*به معنای عدم بزرگنمایی، یعنی اندازه عادی است*/
 	scroll-behavior: smooth;
+	/*این خط اسکرول صاف را امکان پذیر می کند. هنگامی که کاربر از طریق یک پیوند به بخش دیگری از صفحه می رود، مرورگر به جای پرش فوری به مکان مورد نظر، عمل پیمایش را متحرک می کند*/
 }
 body {
 	font-family: var(--Yekan-font);
-	direction: rtl;
-	letter-spacing: -0.5px;
+	direction: rtl; /*این خط جهت متن را از راست به چپ تنظیم می کند*/
+	letter-spacing: -0.5px; /*این خط فاصله بین حروف را تعیین می کند*/
 	-webkit-text-size-adjust: 100%;
+	/*مقدار "100%" به این معنی است که مرورگر سعی نخواهد کرد اندازه متن را متناسب با درگاه دید تنظیم کند. این به ویژه برای جلوگیری از تنظیم خودکار اندازه متن در دستگاه های تلفن همراه مفید است*/
 	background-color: var(--white-clr);
 }
 a {
 	text-decoration: none;
+	/* هیچ تزئین متنی اعمال نخواهد شد. این اغلب برای نادیده گرفتن تزئین متن پیش‌فرض پیوندها، که معمولاً یک زیرخط است، استفاده می‌شود*/
 	color: #444;
 }
 li {
 	list-style: none;
+	/* سبک لیست پیش فرض (گلوله ها یا اعداد) را از یک عنصر لیست حذف می کند*/
 }
 svg {
 	width: 24px;
 	height: 24px;
 	line-height: inherit;
+	/* ارتفاع خط مقدار فضای بالا و زیر عناصر درون خطی را تعیین می کند و همچنین می تواند بر فضای بین خطوط متن تأثیر بگذارد*/
 }
 input,
 button,
@@ -54,6 +59,7 @@ option,
 .dashbord {
 	display: flex;
 	align-self: self-start;
+	/*این خط عنصر را در امتداد محور متقاطع (عمود بر محور اصلی) خط فعلی در ظرف انعطاف پذیر تراز می کند*/
 	padding: 1rem;
 }
 .sidebar {
@@ -62,6 +68,7 @@ option,
 	top: 0;
 	padding-bottom: 40px;
 	overflow-y: hidden;
+	/*این خط از پیمایش عمودی جلوگیری می کند. هر محتوایی که از ارتفاع عنصر فراتر رود، پنهان خواهد شد*/
 	height: calc(100vh - 20px);
 	max-width: 25rem;
 	width: 100%;
@@ -70,17 +77,22 @@ option,
 }
 .sidebar.active {
 	transition: all 300ms linear;
+	/*این خط یک اثر گذار را برای تمام ویژگی های عنصر در مدت زمان 300 میلی ثانیه اعمال می کند. کلمه کلیدی «خطی» سرعت ثابت انیمیشن را از ابتدا تا انتها مشخص می کند*/
 	right: 0;
 }
 .logo a {
-	max-width: fit-content;
+	max-width: fit-content; /*این خط حداکثر عرض عنصر را متناسب با محتوای آن تنظیم می کند*/
+	/*به این معنی که کادر از فضای موجود استفاده می‌کند، اما هرگز بیشتر از «حداکثر محتوا» نیست. این برای جلوگیری از گسترده شدن بیش از حد عنصر در صورت بزرگ شدن محتوای آن مفید است*/
 	display: block;
+	/*عنصر تمام عرض موجود را با یک خط جدید قبل و بعد از عنصر اشغال میکند*/
 	padding: 2rem;
 }
 .menu {
 	height: calc(100% - 20px);
+	/*این خط ارتفاع عنصر را 100% ارتفاع والد آن منهای 20 پیکسل تعیین می کند*/
 	padding-bottom: 40px;
 	overflow-y: auto;
+	/*این خط نوار اسکرول عمودی را تنظیم می کند تا فقط در صورت لزوم ظاهر شود. اگر محتوا از کادر عنصر سرریز شود، یک نوار پیمایش برای پیمایش در محتوا ظاهر می‌شود*/
 }
 .menu::-webkit-scrollbar {
 	width: 0px;
@@ -105,8 +117,10 @@ option,
 	height: 30px;
 	text-align: center;
 	line-height: inherit;
-	position: relative;
+	position: relative; /*تگ نسبت به موقعیت عادی خود قرار گرفته است*/
 	transform: translateY(3px);
+	/*این خط عنصر را 3 پیکسل از موقعیت فعلی اش به پایین می برد */
+	/*"translateY()"به شما امکان می دهد یک عنصر را بدون تغییر طرح بندی عناصر دیگر به سمت بالا یا پایین حرکت دهید */
 }
 .main-menu ul li a {
 	font-size: 1.6rem;
@@ -115,8 +129,9 @@ option,
 	align-items: center;
 	gap: 1rem;
 	padding: 0.5rem;
-	border-radius: 6px;
+	border-radius: 6px;/*برای گرد کردن گوشه‌های یک عنصر*/
 	transition: all 200ms ease-in;
+	/* ثر گذار را با شروع آهسته این خط یک اثر گذار را برای تمام ویژگی های عنصر در مدت زمان 200 میلی ثانیه اعمال می کند */
 	margin-bottom: 1rem;
 }
 .main-menu ul li a:hover {
@@ -146,6 +161,7 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	/*آیتم های انعطاف پذیر را در امتداد خط تراز می کند و فضای باقی مانده را به طور مساوی بین آیتم ها توزیع می کند. اولین مورد در ابتدای خط قرار دارد، آخرین مورد در انتهای خط */
 }
 .toggle-menu {
 	appearance: none;
@@ -158,6 +174,7 @@ main {
 	padding: 0.5rem;
 	background-color: transparent;
 	cursor: pointer;
+	/*این اغلب برای نشان دادن اینکه یک عنصر قابل کلیک است استفاده می شود*/
 	transition: color 250ms ease-in;
 	font-size: 1.5rem;
 }
