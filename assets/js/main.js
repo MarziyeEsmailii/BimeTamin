@@ -1,8 +1,11 @@
+/* همه تگ ها را با توجه به نام کلاس انتخاب میکند
+ و آنها را در یک متغییر دخیره میکند*/
 const tabBtns = document.querySelectorAll(".tab-btn");
 const boxs = document.querySelectorAll(".box");
 const toggleMenu = document.querySelector(".toggle-menu");
 const sidebar = document.querySelector(".sidebar");
 
+/*هنگامی که تگ کلیک می شود، کلاس "فعال" در تگ "نوار کناری" تغییر می کند*/
 toggleMenu.addEventListener("click",(e)=>{
 	sidebar.classList.toggle("active");
 })
